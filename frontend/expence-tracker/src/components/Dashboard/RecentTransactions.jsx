@@ -15,7 +15,7 @@ const RecentTransactions = ({ transactions, onSeeMore }) => {
         </button>
       </div>
 
-      <div className="mt-6">
+      {/* <div className="mt-6">
         <TransactionInfoCard
           title="Food"
           icon={null}
@@ -24,9 +24,9 @@ const RecentTransactions = ({ transactions, onSeeMore }) => {
           type="income"
           hideDeleteBtn
         />
-      </div>
+      </div> */}
 
-      {/* <div className='mt-6'>
+      <div className='mt-6'>
         {transactions?.slice(0,5)?.map((item) => (
             <TransactionInfoCard 
                 key={item._id}
@@ -38,7 +38,7 @@ const RecentTransactions = ({ transactions, onSeeMore }) => {
                 hideDeleteBtn
             />
         ))}
-      </div> */}
+      </div>
     </div>
   )
 }
